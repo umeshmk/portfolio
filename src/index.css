@@ -1,0 +1,23 @@
+@import 'styles/sanitize.css';
+
+:root {
+  --bgColor: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bgColor);
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 3rem 0;
+  }
+}

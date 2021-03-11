@@ -1,0 +1,32 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // Emmet for react
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact" // provides html in jsx
+  },
+
+  // For stylelint - disable default linters
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // For autocompletions
+  "files.associations": {
+    // "*.css": "scss" // not needed since using custom snippets
+    // "*.js": "javascriptreact"
+  },
+
+  // correct icons for "vscode-icons"
+  "vsicons.associations.files": [
+    {"icon": "css", "extensions": ["css"]} // if using postcss recommended extension
+    // {"icon": "js", "extensions": ["js"]}
+  ],
+
+  // autofix
+  "editor.codeActionsOnSave": {
+    // "source.fixAll.eslint": false,
+    "source.fixAll.stylelint": true
+  }
+}
