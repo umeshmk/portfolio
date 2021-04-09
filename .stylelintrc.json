@@ -5,6 +5,9 @@
     "comment-whitespace-inside": null,
     "no-invalid-double-slash-comments": null,
     "comment-empty-line-before": null,
-    "at-rule-no-unknown": null
+    "at-rule-no-unknown": null,
+    "media-feature-range-operator-space-before": null,
+    "media-feature-range-operator-space-after": null,
+    "value-keyword-case": null
   }
 }

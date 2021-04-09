@@ -1,46 +1,50 @@
-import React, {useState} from 'react';
-import Styles from './App.css';
-import Logo from './logo.png';
+import React, {useState, useLayoutEffect} from 'react';
+import styled from 'styled-components';
 
 import theme from './Themes/global';
-import Button from './Elements/Button';
-import Footer from './Footer/Footer';
 import {ThemeProvider} from 'styled-components';
+import Layout from './Layout';
 
-const App = () => {
-  const [state, setState] = useState('');
+import {IconRight, IconLeft} from './Elements/Elements';
+
+const Body = ({className}) => {
+  const [isProject, setIsProject] = useState(false);
+  const handleClick = () => {
+    setIsProject(!isProject);
+    // window.scrollTo(0, 0);
+    // window.scroll({top: 0, behavior: 'smooth'});
+  };
+
+  useLayoutEffect(() => {
+    window.scroll({top: 0, behavior: 'smooth'});
+
+    return () => {};
+  }, [isProject]);
 
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <div className={Styles.container}>
-          <div>
-            <img src={Logo} alt="Logo react" />
-            {/* if image is from "public/images" folder */}
-            {/* <img src="images/logo512.png" alt="Logo react" /> */}
-          </div>
-          <form>
-            <input
-              type="text"
-              value={state}
-              placeholder="Start Typing....."
-              onChange={(e) => {
-                setState(e.target.value);
-              }}
-            />
-          </form>
-          <div>
-            <h1>React Refresh App</h1>
-            <h3>
-              Use this project as your starting point for any react projects.
-            </h3>
-            <Button primary>Styled components</Button>
-          </div>
+    <div className={className}>
+      <ThemeProvider theme={theme}>
+        <Layout isProject={isProject} />
+        <div className="icon" onClick={handleClick}>
+          {!isProject && <IconRight>Projects</IconRight>}
+          {isProject && <IconLeft>Home</IconLeft>}
         </div>
-        <Footer />
-      </div>
-    </ThemeProvider>
+      </ThemeProvider>
+    </div>
   );
 };
 
+const App = styled(Body)`
+  /* height: 100vh; */
+  /* border: 3px solid gray; */
+  width: 100vw;
+  overflow: hidden;
+
+  & .icon {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    /* border: 1px solid #000; */
+  }
+`;
 export default App;
