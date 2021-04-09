@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Umesh Kadam (Portfolio)",
+    "description": "This project is a my portfolio, the current site, hosted on Github Pages. ",
+    "github": "https://github.com/umeshmk/umeshmk.github.io",
+    "githubRepo": "umeshmk.github.io",
+    "techstack": [
+      "react",
+      "react-hooks",
+      "react-refresh",
+      "styled-components",
+      "webpack",
+      "styleLint",
+      "postcss",
+      "es6",
+      "html"
+    ]
+  },
+  {
+    "name": "TailwindCss Cheatsheet",
+    "description": "TailwindCss is gaining popularity among masses. I too tried along with many other developers to learn tailwind. In my quest I realized there is a void for a cheatsheet. There were some other cheatsheet but it never gave me a bird's eye view nor any satisfaction. Hence I made this and have been appreaciated by developers globally.",
+    "github": "https://github.com/umeshmk/Tailwindcss-cheatsheet",
+    "githubRepo": "Tailwindcss-cheatsheet",
+    "techstack": ["vuejs", "tailwindCss", "css", "es6", "html"]
+  },
+  {
+    "name": "TechNotes",
+    "description": "Keeping everything in Mind is not a great idea. It's way better to write it down as simply & precisely. What's better than Markdown to take notes and empty my Mind for other new & important things in Web Development.",
+    "github": "https://github.com/umeshmk/technotes",
+    "githubRepo": "technotes",
+    "techstack": ["vue", "vuepress", "markdown", "es6"]
+  },
+  {
+    "name": "React Refresh App",
+    "description": "This repo is a part of learning the environment in which React thrives. I have tried to learn as much as possible. I use this project as a scaffhold for my simple React projects including this portfolio (umeshmk.github.io). ",
+    "github": "https://github.com/umeshmk/react-refresh-app",
+    "githubRepo": "react-refresh-app",
+    "techstack": [
+      "react",
+      "react-refresh",
+      "styled-components",
+      "webpack",
+      "styleLint",
+      "postcss",
+      "es6",
+      "eslint",
+      "html"
+    ]
+  },
+  {
+    "name": "Bookmarks",
+    "description": "Finest collection of utilitarian websites for web developers.",
+    "github": "https://github.com/umeshmk/Bookmarks",
+    "githubRepo": "Bookmarks",
+    "techstack": [
+      "vue",
+      "express",
+      "sqlite3",
+      "tailwindcss",
+      "axios",
+      "laravel-mix",
+      "lodash",
+      "sass",
+      "dotenv",
+      "nodemon"
+    ]
+  },
+  {
+    "name": "MarkedIT",
+    "description": "Render + View + Theme + Print -> Any Remote Markdown File.",
+    "github": "https://github.com/umeshmk/MarkedIT",
+    "githubRepo": "MarkedIT",
+    "techstack": [
+      "vue",
+      "markdown",
+      "tailwindcss",
+      "jquery",
+      "laravel-mix",
+      "lodash",
+      "sass"
+    ]
+  }
+]

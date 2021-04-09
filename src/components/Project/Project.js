@@ -1,39 +1,52 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import Thumb from './Thumb';
 import Frame from './Frame';
+import Modal from './Modal';
+
 // import Body from './Body';
 import {H1, IconLeft} from '../Elements/Elements';
-
-const list = [
-  'Umesh Kadam (Portfolio)',
-  'Tailwindcss cheatsheet',
-  'TechNotes',
-  'React Refresh App',
-  'Bookmarks',
-  'MarkedIT',
-];
+import DataList from './project-data.json';
 
 // define body
-const body = ({className, children}) => {
+const Body = ({className, children}) => {
+  const [showModal, setShowModal] = useState(false);
+  const [projectIndex, setProjectIndex] = useState(0);
+
+  const handleClick = (index) => {
+    index == projectIndex && setShowModal(!showModal);
+    index != projectIndex && setProjectIndex(index);
+  };
+
   return (
     <div className={className}>
       <H1>Projects</H1>
       <div className="frame">
         <Frame>
-          {list.map((item) => (
-            <Thumb key={item}>{item}</Thumb>
+          {DataList.map((item, index) => (
+            // <Thumb handleClick={() => handleClick(index)} key={index}>
+            <Thumb handleClick={handleClick} projectIndex={index} key={index}>
+              {item.name}
+            </Thumb>
           ))}
         </Frame>
       </div>
-
+      {showModal && (
+        <Modal
+          content={DataList[projectIndex]}
+          projectIndex={projectIndex}
+          maxProjectIndex={DataList.length - 1}
+          handleClick={handleClick}>
+          {children}
+        </Modal>
+      )}
       {/* <IconLeft>Home</IconLeft> */}
     </div>
   );
 };
 
-// add styles to body
-const Project = styled(body)`
+// add styles to Body
+const Project = styled(Body)`
   display: flex;
   flex-direction: column;
   align-items: center;

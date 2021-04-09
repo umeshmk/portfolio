@@ -46,7 +46,10 @@ const IconRight = styled(body)`
     width: auto;
     padding: 0 0.5rem;
     font-size: 1.2rem;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: ${(props) => {
+      return props.children ? '#fff' : 'transparent';
+    }};
   }
 
   & li:nth-child(2) {
