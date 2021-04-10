@@ -8,6 +8,7 @@ let theme = {
     md: '(max-width: 1024px)',
     lg: '(max-width: 1536px)',
     xl: '(min-width: 1536px)',
+    // landscape: '(min-width: 640px) and (max-width: 1024px)',
     // 768px
     // 1280px
   },

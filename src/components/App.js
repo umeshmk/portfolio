@@ -11,8 +11,6 @@ const Body = ({className}) => {
   const [isProject, setIsProject] = useState(false);
   const handleClick = () => {
     setIsProject(!isProject);
-    // window.scrollTo(0, 0);
-    // window.scroll({top: 0, behavior: 'smooth'});
   };
 
   useLayoutEffect(() => {

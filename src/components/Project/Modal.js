@@ -29,7 +29,7 @@ const body = ({
           </div>
         </div>
       </div>
-      <div className="close" onClick={() => handleClick(projectIndex)}>
+      <div className="close" onClick={() => handleClick(-1)}>
         <i className="fa fa-close"></i>
       </div>
       {projectIndex > 0 && (
@@ -57,10 +57,9 @@ const Modal = styled(body)`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 3px solid #000; */
+  height: ${() => document.body.scrollHeight + 'px'};
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
 
   & .content {
     display: flex;
@@ -97,16 +96,17 @@ const Modal = styled(body)`
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
     font-size: 1.4rem;
     /* font-style: italic; */
     /* background-color: ${(props) => props.theme.color.primary}; */
     background-color: inherit;
 
     & span {
-      margin: 0.4rem 1rem;
+      margin: 0.6rem 1rem;
       padding: 0.1rem 0.8rem;
       color: skyblue;
+      text-shadow: 2px 1px 0 #000;
       /* background-color: #fff; */
       background-color: inherit;
       border-radius: 1rem;
@@ -130,6 +130,32 @@ const Modal = styled(body)`
   & .iconRight {
     position: absolute;
     right: 1rem;
+  }
+
+  @media ${(props) => props.theme.breakpoint.sm} {
+    align-items: start;
+    width: 100%;
+
+    & .content {
+      width: 100%;
+      height: 50%;
+      /* margin-top: 50%; */
+      margin-top: 10rem;
+    }
+
+    & .close {
+      top: 1.5%;
+      right: auto;
+      left: auto;
+    }
+
+    & .iconLeft {
+      top: 2.5%;
+    }
+
+    & .iconRight {
+      top: 2.5%;
+    }
   }
 `;
 

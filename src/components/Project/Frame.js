@@ -27,7 +27,7 @@ const Frame = styled(body)`
   }
 
   @media ${(props) => props.theme.breakpoint.md} {
-    padding: 10rem 0;
+    padding: 7rem 0;
   }
 `;
 

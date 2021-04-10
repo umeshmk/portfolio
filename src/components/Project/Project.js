@@ -1,22 +1,32 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import Thumb from './Thumb';
 import Frame from './Frame';
 import Modal from './Modal';
 
 // import Body from './Body';
-import {H1, IconLeft} from '../Elements/Elements';
+import {H1} from '../Elements/Elements';
 import DataList from './project-data.json';
 
 // define body
 const Body = ({className, children}) => {
   const [showModal, setShowModal] = useState(false);
-  const [projectIndex, setProjectIndex] = useState(0);
+  const [projectIndex, setProjectIndex] = useState(-1);
 
   const handleClick = (index) => {
-    index == projectIndex && setShowModal(!showModal);
-    index != projectIndex && setProjectIndex(index);
+    setProjectIndex(index);
+    if (index == -1) {
+      setShowModal(!showModal);
+    }
   };
+
+  useEffect(() => {
+    if (projectIndex == -1) {
+      setShowModal(!showModal);
+    }
+
+    window.scroll({top: 0, behavior: 'smooth'});
+  }, [projectIndex]);
 
   return (
     <div className={className}>
@@ -24,23 +34,21 @@ const Body = ({className, children}) => {
       <div className="frame">
         <Frame>
           {DataList.map((item, index) => (
-            // <Thumb handleClick={() => handleClick(index)} key={index}>
             <Thumb handleClick={handleClick} projectIndex={index} key={index}>
               {item.name}
             </Thumb>
           ))}
         </Frame>
       </div>
-      {showModal && (
+
+      {showModal && projectIndex > -1 && (
         <Modal
           content={DataList[projectIndex]}
           projectIndex={projectIndex}
           maxProjectIndex={DataList.length - 1}
-          handleClick={handleClick}>
-          {children}
-        </Modal>
+          handleClick={handleClick}
+        />
       )}
-      {/* <IconLeft>Home</IconLeft> */}
     </div>
   );
 };
@@ -69,6 +77,7 @@ const Project = styled(Body)`
   @media ${(props) => props.theme.breakpoint.md} {
     & .frame {
       width: 100%;
+      /* border: 1px solid red; */
     }
   }
 

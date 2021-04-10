@@ -28,7 +28,7 @@
     "description": "Keeping everything in Mind is not a great idea. It's way better to write it down as simply & precisely. What's better than Markdown to take notes and empty my Mind for other new & important things in Web Development.",
     "github": "https://github.com/umeshmk/technotes",
     "githubRepo": "technotes",
-    "techstack": ["vue", "vuepress", "markdown", "es6"]
+    "techstack": ["vue", "vuepress", "markdown", "github-pages", "es6", "html"]
   },
   {
     "name": "React Refresh App",
