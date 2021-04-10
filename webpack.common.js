@@ -13,7 +13,7 @@ module.exports = {
   mode: isProduction ? 'production' : 'development',
   output: {
     filename: isProduction ? '[name].[contenthash:5].min.js' : '[name].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     publicPath: '', // issue https://bit.ly/3cPweLu
     assetModuleFilename: isProduction
       ? 'images/[name]-[contenthash:5][ext]'
