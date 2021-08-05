@@ -17,6 +17,23 @@
     ]
   },
   {
+    "name": "Yehproperty",
+    "description": "A Single Page Application - Real estate. ",
+    "github": "https://github.com/umeshmk/yehproperty",
+    "githubRepo": "yehproperty",
+    "techstack": [
+      "typescript",
+      "react",
+      "react-hooks",
+      "reduxjs/toolkit",
+      "react-router",
+      "styled-components",
+      "google-maps",
+      "cloudinary",
+      "algolia-places"
+    ]
+  },
+  {
     "name": "TailwindCss Cheatsheet",
     "description": "TailwindCss is gaining popularity among masses. I too tried along with many other developers to learn tailwind. In my quest I realized there is a void for a cheatsheet. There were some other cheatsheet but it never gave me a bird's eye view nor any satisfaction. Hence I made this and have been appreaciated by developers globally.",
     "github": "https://github.com/umeshmk/Tailwindcss-cheatsheet",
