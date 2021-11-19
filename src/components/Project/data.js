@@ -58,13 +58,13 @@ const rpcount = {
   skills: [],
 };
 
-export let githubRepos = {
-  'react-schematic': schematic,
-  'Tailwindcss-cheatsheet': tailwind,
-  'rp-react-with-styled-components': rpsc,
-  technotes: technotes,
-  'rp-react-firebase-crud': rpfire,
-  yehproperty: yehproperty,
-  'umeshmk.github.io': umesh,
-  'rp-vite-redux-counter': rpcount,
-};
+export let githubRepos = [
+   schematic,
+   tailwind,
+   rpsc,
+   technotes,
+   rpfire,
+   yehproperty,
+   umesh,
+   rpcount,
+]

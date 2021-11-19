@@ -17,7 +17,7 @@ const body = ({
         <H1>{content.name}</H1>
         <h3 className="description">{content.description}</h3>
         <div className="wrapper">
-          <div className="techstack">
+          {/* <div className="techstack">
             {content.techstack.map((item, index) => (
               <span key={index}>{item}</span>
             ))}
@@ -26,7 +26,7 @@ const body = ({
             <Link href={content.github} target="blank">
               {content.github}
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="close" onClick={() => handleClick(-1)}>
@@ -50,6 +50,14 @@ const body = ({
 
 // add styles to body
 const Modal = styled(body)`
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+};
   position: absolute;
   top: 0;
   z-index: 99999;
@@ -60,6 +68,7 @@ const Modal = styled(body)`
   height: ${() => document.body.scrollHeight + 'px'};
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
+  animation: fadein 0.5s;
 
   & .content {
     display: flex;

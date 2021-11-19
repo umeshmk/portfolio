@@ -34,9 +34,9 @@ const Body = ({className, children}) => {
       <H1>Projects</H1>
       <div className="frame">
         <Frame>
-          {Object.keys(githubRepos).map((item, index) => (
+          {githubRepos.map((item, index) => (
             <Thumb handleClick={handleClick} projectIndex={index} key={index}>
-              {githubRepos[item].name}
+              {item.name}
             </Thumb>
           ))}
           {/* {DataList.map((item, index) => (
@@ -49,9 +49,9 @@ const Body = ({className, children}) => {
 
       {showModal && projectIndex > -1 && (
         <Modal
-          content={DataList[projectIndex]}
+          content={githubRepos[projectIndex]}
           projectIndex={projectIndex}
-          maxProjectIndex={DataList.length - 1}
+          maxProjectIndex={githubRepos.length - 1}
           handleClick={handleClick}
         />
       )}
