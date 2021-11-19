@@ -1,7 +1,7 @@
 {
-  "name": "react-refresh-app",
+  "name": "umeshmk.github.io",
   "version": "1.0.0",
-  "description": "Use This Project As Your Starting Point For Any React Projects.",
+  "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",

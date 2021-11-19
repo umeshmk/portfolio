@@ -12,3 +12,4 @@ build
 config.local.js
 basement_dist
 src/style/tailwind.css
+docs

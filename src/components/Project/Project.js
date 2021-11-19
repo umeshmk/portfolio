@@ -28,8 +28,8 @@ const Body = ({className, children}) => {
   // }, [projectIndex]);
 
   const handleClickGoto = (repo) =>
-    window.open('https:github.com/umeshmk/' + repo, '_blank').focus();
-
+    window.open('https://github.com/umeshmk/' + repo, '_blank').focus();
+    
   return (
     <div className={className}>
       <H1>Projects</H1>
