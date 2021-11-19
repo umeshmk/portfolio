@@ -1,33 +1,34 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import Thumb from './Thumb';
-import Frame from './Frame';
-import Modal from './Modal';
-
 // import Body from './Body';
 import {H1} from '../Elements/Elements';
-import DataList from './project-data.json';
-import { githubRepos } from './data';
+import {githubRepos} from './data';
+import Frame from './Frame';
+import Modal from './Modal';
+import Thumb from './Thumb';
 
 // define body
 const Body = ({className, children}) => {
-  const [showModal, setShowModal] = useState(false);
-  const [projectIndex, setProjectIndex] = useState(-1);
+  // const [showModal, setShowModal] = useState(false);
+  // const [projectIndex, setProjectIndex] = useState(-1);
 
-  const handleClick = (index) => {
-    setProjectIndex(index);
-    if (index == -1) {
-      setShowModal(!showModal);
-    }
-  };
+  // const handleClick = (index) => {
+  //   setProjectIndex(index);
+  //   if (index == -1) {
+  //     setShowModal(!showModal);
+  //   }
+  // };
 
-  useEffect(() => {
-    if (projectIndex == -1) {
-      setShowModal(!showModal);
-    }
+  // useEffect(() => {
+  //   if (projectIndex == -1) {
+  //     setShowModal(!showModal);
+  //   }
 
-    window.scroll({top: 0, behavior: 'smooth'});
-  }, [projectIndex]);
+  //   window.scroll({top: 0, behavior: 'smooth'});
+  // }, [projectIndex]);
+
+  const handleClickGoto = (repo) =>
+    window.open('https:github.com/umeshmk/' + repo, '_blank').focus();
 
   return (
     <div className={className}>
@@ -35,7 +36,10 @@ const Body = ({className, children}) => {
       <div className="frame">
         <Frame>
           {githubRepos.map((item, index) => (
-            <Thumb handleClick={handleClick} projectIndex={index} key={index}>
+            <Thumb
+              handleClick={() => handleClickGoto(item.repo)}
+              projectIndex={index}
+              key={index}>
               {item.name}
             </Thumb>
           ))}
@@ -47,14 +51,14 @@ const Body = ({className, children}) => {
         </Frame>
       </div>
 
-      {showModal && projectIndex > -1 && (
+      {/* {showModal && projectIndex > -1 && (
         <Modal
           content={githubRepos[projectIndex]}
           projectIndex={projectIndex}
           maxProjectIndex={githubRepos.length - 1}
-          handleClick={handleClick}
+          // handleClick={handleClick}
         />
-      )}
+      )} */}
     </div>
   );
 };

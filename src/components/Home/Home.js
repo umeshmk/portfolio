@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import {H1} from '../Elements/Elements';
 import Avatar from './Avatar';
-import Frame from './Frame/Frame';
 import Body from './Body';
-import {H1, IconRight} from '../Elements/Elements';
+import Frame from './Frame/Frame';
 
 // define body
 const body = ({className, children}) => {
@@ -11,6 +11,8 @@ const body = ({className, children}) => {
     <div className={className}>
       <Avatar />
       <H1>Umesh Kadam</H1>
+      <H1 className="subtitle">Frontend Developer <span>(Typescript & React)</span></H1>
+
       <div className="frame">
         <Frame>
           <Body />
@@ -40,7 +42,17 @@ const Home = styled(body)`
   & .frame {
     width: 40%;
   }
-
+  h1{
+    margin: 0;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    /* margin: 0;; */
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color:#444;
+    font-weight: 300;
+  }
   @media ${(props) => props.theme.breakpoint.lg} {
     & .frame {
       width: 50%;
@@ -56,6 +68,9 @@ const Home = styled(body)`
   @media ${(props) => props.theme.breakpoint.sm} {
     & .frame {
       width: 100%;
+    }
+    .subtitle span{
+      display: block;
     }
   }
 `;
