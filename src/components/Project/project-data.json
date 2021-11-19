@@ -46,55 +46,5 @@
     "github": "https://github.com/umeshmk/technotes",
     "githubRepo": "technotes",
     "techstack": ["vue", "vuepress", "markdown", "github-pages", "es6", "html"]
-  },
-  {
-    "name": "React Refresh App",
-    "description": "This repo is a part of learning the environment in which React thrives. I have tried to learn as much as possible. I use this project as a scaffhold for my simple React projects including this portfolio (umeshmk.github.io). ",
-    "github": "https://github.com/umeshmk/react-refresh-app",
-    "githubRepo": "react-refresh-app",
-    "techstack": [
-      "react",
-      "react-refresh",
-      "styled-components",
-      "webpack",
-      "styleLint",
-      "postcss",
-      "es6",
-      "eslint",
-      "html"
-    ]
-  },
-  {
-    "name": "Bookmarks",
-    "description": "Finest collection of utilitarian websites for web developers.",
-    "github": "https://github.com/umeshmk/Bookmarks",
-    "githubRepo": "Bookmarks",
-    "techstack": [
-      "vue",
-      "express",
-      "sqlite3",
-      "tailwindcss",
-      "axios",
-      "laravel-mix",
-      "lodash",
-      "sass",
-      "dotenv",
-      "nodemon"
-    ]
-  },
-  {
-    "name": "MarkedIT",
-    "description": "Render + View + Theme + Print -> Any Remote Markdown File.",
-    "github": "https://github.com/umeshmk/MarkedIT",
-    "githubRepo": "MarkedIT",
-    "techstack": [
-      "vue",
-      "markdown",
-      "tailwindcss",
-      "jquery",
-      "laravel-mix",
-      "lodash",
-      "sass"
-    ]
   }
 ]

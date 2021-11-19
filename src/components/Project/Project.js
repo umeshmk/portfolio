@@ -7,6 +7,7 @@ import Modal from './Modal';
 // import Body from './Body';
 import {H1} from '../Elements/Elements';
 import DataList from './project-data.json';
+import { githubRepos } from './data';
 
 // define body
 const Body = ({className, children}) => {
@@ -33,11 +34,16 @@ const Body = ({className, children}) => {
       <H1>Projects</H1>
       <div className="frame">
         <Frame>
-          {DataList.map((item, index) => (
+          {Object.keys(githubRepos).map((item, index) => (
+            <Thumb handleClick={handleClick} projectIndex={index} key={index}>
+              {githubRepos[item].name}
+            </Thumb>
+          ))}
+          {/* {DataList.map((item, index) => (
             <Thumb handleClick={handleClick} projectIndex={index} key={index}>
               {item.name}
             </Thumb>
-          ))}
+          ))} */}
         </Frame>
       </div>
 

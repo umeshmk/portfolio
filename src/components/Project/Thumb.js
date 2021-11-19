@@ -18,19 +18,24 @@ const Thumb = styled(body)`
   width: 10rem;
   height: 10rem;
   margin: 1rem;
-  color: #555;
-  /* padding: 1rem;; */
+  color: #222;
+  padding: 1rem;;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  border: 15px solid ${(props) => props.theme.color.primary};
+  border: 2.5px solid ${(props) => props.theme.color.primary};
   border-radius: 5em;
   cursor: pointer;
+  box-shadow: inset 0 0 0px 0px  ${(props) => props.theme.color.primary};
   transition: all 0.1s;
 
   &:hover {
     color: #000;
-    filter: brightness(130%);
+    /* color: #fff; */
+    /* filter: brightness(130%); */
+    /* border:6px solid  ${(props) => props.theme.color.primary}; */
+    box-shadow: inset 0 0 0px 10px  ${(props) => props.theme.color.primary};
+    transition: all 0.351s;
   }
 
   &:active {
