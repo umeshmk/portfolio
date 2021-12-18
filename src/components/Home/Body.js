@@ -14,12 +14,15 @@ const body = ({className, children}) => {
       from Mumbai University, India.
       <p />I have been in Web Development since more than half a decade. Take a
       look at my <Link href="https://github.com/umeshmk">Github</Link>
-      &nbsp;and&nbsp;
+      ,&nbsp;
       <Link href="https://stackoverflow.com/users/4681392/umesh-kadam">
-        Stack Overflow
+        StackOverflow
+      </Link>
+      &nbsp;and&nbsp;
+      <Link href="https://triplebyte.com/tb/umesh-kadam-wto3lpz/certificate">
+        Triplebyte
       </Link>
       &nbsp; accounts.
-      {/* <br/> */}
       <br />
       <p />
       <p>
