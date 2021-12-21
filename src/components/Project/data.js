@@ -58,13 +58,21 @@ const rpcount = {
   skills: [],
 };
 
+const rpjwt = {
+  repo: 'rp-jwt',
+  name: 'JWT - React & Express',
+  description: '',
+  skills: [],
+};
+
 export let githubRepos = [
-   schematic,
-   tailwind,
-   rpsc,
-   technotes,
-   rpfire,
-   yehproperty,
-   umesh,
-   rpcount,
-]
+  schematic,
+  tailwind,
+  rpsc,
+  technotes,
+  rpfire,
+  rpjwt,
+  yehproperty,
+  // umesh,
+  rpcount,
+];
