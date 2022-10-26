@@ -1,0 +1,59 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+@import './sanitize.css';
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import '_variables.scss';
+
+// CSS VARIABLES
+:root {
+  /* --bgColor: #333; */
+  --colorPrimary: #8e4ce3;
+  --colorText: #141823;
+}
+
+* {
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.heading1 {
+  color: var(--colorPrimary);
+  filter: brightness(80%);
+  font-size: 2rem;
+}
+
+.heading3 {
+  font-size: 1.2rem;
+  color: var(--colorText);
+  font-weight: 300;
+}
+
+.circle {
+  display: inline-flex;
+  border: 15px solid var(--colorPrimary);
+  border-radius: 5em;
+}

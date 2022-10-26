@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.avatar {
+  display: flex;
+  width: 8rem;
+  height: 8rem;
+  background-image: url(/avatar.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 5em;
+  /* height: 130px; */
+  filter: sepia(100%);
+  /* filter: brightness(80%); */
+}

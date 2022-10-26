@@ -1,0 +1,13 @@
+@import '_variables.scss';
+
+.main {
+  font-size: 3rem;
+  border: 1px solid red;
+  min-height: 30vh;
+}
+
+@media all and ($media-tablet) {
+  .main {
+    font-size: 7rem;
+  }
+}
