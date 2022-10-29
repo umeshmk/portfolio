@@ -1,16 +1,26 @@
 import {ReactElement} from 'react';
 
-interface IProps {
+interface CircleProps {
   children?: React.ReactNode;
 }
-// const H1 = (props: IProps) => {
-//   return <h1>{props.children}</h1>;
-// };
-
-const Circle = (props: IProps) => {
+const Circle = (props: CircleProps) => {
   return <div className="circle">{props.children}</div>;
+};
+
+interface FrameProps {
+  type: 'vertical' | 'horizontal';
+}
+const Frame = ({type}: FrameProps) => {
+  return (
+    <div
+      style={{rotate: type === 'horizontal' ? '0deg' : '90deg'}}
+      data-type={type}>
+      <img src="/frame.svg" alt="frame" />
+    </div>
+  );
 };
 
 export const El = {
   Circle,
+  Frame,
 };

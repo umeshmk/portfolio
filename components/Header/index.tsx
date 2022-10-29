@@ -10,6 +10,8 @@ export const Header = () => {
 
       <div className="heading1">Umesh Kadam</div>
       <div className="heading3">Frontend Developer (Typescript & React)</div>
+
+      <El.Frame type="horizontal" />
     </header>
   );
 };
