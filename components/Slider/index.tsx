@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import {Pagination} from 'swiper';
 import styles from './styles.module.scss';
 import {Description} from '../Description';
+import {Projects} from '../Projects';
 
 export const Slider = () => {
   const pagination = {
@@ -24,10 +25,10 @@ export const Slider = () => {
         <SwiperSlide>
           <Description />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <Projects />
+        </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
     </div>
   );
