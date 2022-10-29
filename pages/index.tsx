@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import {El} from '../components/Elements';
 import {Header} from '../components/Header';
 import {Home} from '../components/Home';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/HomePage.module.scss';
 
 export default function HomePage() {
   return (

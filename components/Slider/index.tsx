@@ -6,6 +6,7 @@ import {Pagination} from 'swiper';
 import styles from './styles.module.scss';
 import {Description} from '../Description';
 import {Projects} from '../Projects';
+import {El} from '../Elements';
 
 export const Slider = () => {
   const pagination = {
@@ -16,20 +17,27 @@ export const Slider = () => {
   };
 
   return (
-    <div className={styles.slider}>
-      {/* Slider */}
-      <Swiper
-        pagination={pagination}
-        modules={[Pagination]}
-        className="mySwiper">
-        <SwiperSlide>
-          <Description />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Projects />
-        </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-      </Swiper>
+    <div className={styles.sliderBox}>
+      {/* <div> */}
+      <El.Frame type="vertical" />
+      {/* </div> */}
+      <div className={styles.slider}>
+        <Swiper
+          pagination={pagination}
+          modules={[Pagination]}
+          className="mySwiper">
+          <SwiperSlide>
+            <Description />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Projects />
+          </SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+        </Swiper>
+      </div>
+      {/* <div> */}
+      <El.Frame type="vertical" />
+      {/* </div> */}
     </div>
   );
 };

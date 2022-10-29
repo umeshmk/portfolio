@@ -1,5 +1,18 @@
+.sliderBox {
+  background-color: antiquewhite;
+  // height: 60vh;
+  // width: 60vw;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sliderBox > div {
+  // display: inline-flex;
+}
 .slider {
   // background-color: antiquewhite;
   min-height: 60vh;
-  width: 60vw;
+  width: 30vw;
+  // display: flex;
 }
