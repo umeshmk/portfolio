@@ -5,7 +5,7 @@ import styles from '../styles/HomePage.module.scss';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className={styles.main}>
       <Head>
         <title>Umesh Kadam</title>
         <meta
@@ -15,7 +15,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className={styles.main}>
+      <div>
         <Home />
       </div>
     </div>

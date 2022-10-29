@@ -1,8 +1,8 @@
+@import '../../styles/variables';
+
 .sliderBox {
   background-color: antiquewhite;
-  // height: 60vh;
-  // width: 60vw;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,16 @@
 .slider {
   // background-color: antiquewhite;
   min-height: 60vh;
-  width: 30vw;
+  width: 100%;
   // display: flex;
 }
+
+.sliderBox [data-type='vertical'] {
+  display: none;
+}
+
+// @media all and ($media-tablet) {
+//   .sliderBox [data-type='vertical'] {
+//     display: block;
+//   }
+// }
