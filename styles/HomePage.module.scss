@@ -1,20 +1,11 @@
 @import '_variables.scss';
 
 .main {
-  // font-size: 3rem;
-  // border: 1px solid red;
-  // min-height: 30vh;
   padding: 3rem 0;
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
 }
-
-// @media all and ($media-tablet) {
-//   .main {
-//     font-size: 7rem;
-//   }
-// }
 
 @media all and ($media-laptop-lg) {
   .main {
@@ -24,14 +15,12 @@
 
 @media all and ($media-desktop) {
   .main {
-    // padding: 1rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .container {
-    // border: 1px solid;
     width: 100%;
   }
 }

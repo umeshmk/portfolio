@@ -1,14 +1,3 @@
-// const repos = [
-//   'react-schematic',
-//   'Tailwindcss-cheatsheet',
-//   'rp-react-with-styled-components',
-//   'technotes',
-//   'rp-react-firebase-crud',
-//   'yehproperty',
-//   'umeshmk.github.io',
-//   'rp-vite-redux-counter',
-// ];
-
 const schematic = {
   repo: 'react-schematic',
   name: 'Npm library - react-schematic',

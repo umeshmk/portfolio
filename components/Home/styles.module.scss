@@ -1,22 +1,9 @@
 @import '../../styles/variables';
 
 .home {
-  // background-color: #1112;
-  // padding: 4rem 0rem;
-  // margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-
-@media all and ($media-laptop-lg) {
-  .home {
-    // width: 60%;
-    // height: 50vh;
-    // border: 1px solid red;
-    // overflow-y: hidden;
-    // overflow-x: visible;
-  }
 }

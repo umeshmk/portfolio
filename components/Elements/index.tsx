@@ -12,9 +12,7 @@ interface FrameProps {
 }
 const Frame = ({type}: FrameProps) => {
   return (
-    <div
-      // style={{rotate: type === 'horizontal' ? '0deg' : '90deg'}}
-      data-type={type}>
+    <div data-type={type}>
       <img
         src={
           type === 'horizontal' ? '/frame-horizontal.svg' : 'frame-vertical.svg'

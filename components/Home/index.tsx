@@ -1,5 +1,3 @@
-import {Buttons} from '../Button';
-import {El} from '../Elements';
 import {Slider} from '../Slider';
 import styles from './styles.module.scss';
 

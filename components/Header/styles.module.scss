@@ -6,8 +6,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  // padding: 3rem 0 0 0;
-  // border: 1px solid;
 }
 
 .avatar {
@@ -18,9 +16,8 @@
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 5em;
-  /* height: 130px; */
+
   filter: sepia(100%);
-  /* filter: brightness(80%); */
 }
 .header :global [data-type='horizontal'] {
   padding: 3rem 0 0 0;
@@ -32,11 +29,5 @@
   }
   .header :global .heading3 {
     display: flex;
-  }
-}
-
-@media all and ($media-laptop-lg) {
-  .header {
-    // padding: 0 0 1rem 0;
   }
 }
