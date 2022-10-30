@@ -1,9 +1,12 @@
+@import '../../styles/variables';
+
 .projects {
   font-size: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 3rem 0;
+  // border: 1px solid red;
 }
 .circleBox {
   margin: 5px;
@@ -42,5 +45,20 @@
     box-shadow: inset 0 0 0px 3px #fff;
     transition: all 0.5s;
     color: var(--colorPrimary);
+  }
+}
+
+@media all and ($media-laptop) {
+  .projects {
+    padding: 0;
+    // border: 1px solid red;
+    // padding: 3rem 0 0 0;
+  }
+}
+@media all and ($media-laptop-lg) {
+  .projects {
+    // padding: 0;
+    // border: 1px solid red;
+    // padding: 3rem 0 0 0;
   }
 }

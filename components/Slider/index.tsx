@@ -16,7 +16,9 @@ export const Slider = () => {
   return (
     <>
       <div className={styles.sliderBox}>
-        <El.Frame type="vertical" />
+        <div className={styles.vertical}>
+          <El.Frame type="vertical" />
+        </div>
         <div className={styles.slider}>
           <SwiperComponent
             modules={[Pagination]}
@@ -36,7 +38,9 @@ export const Slider = () => {
             </SwiperSlide>
           </SwiperComponent>
         </div>
-        <El.Frame type="vertical" />
+        <div className={styles.vertical}>
+          <El.Frame type="vertical" />
+        </div>
       </div>
       <El.Frame type="horizontal" />
       <div

@@ -10,7 +10,7 @@ export const Header = () => {
 
       <div className="heading1">Umesh Kadam</div>
       <div className="heading3">
-        Frontend Developer
+        Frontend Developer&nbsp;
         <div>(Typescript & React)</div>
       </div>
 

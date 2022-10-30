@@ -5,28 +5,61 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  // border: 2px dotted blue;
 }
 .sliderBox > div {
   // display: inline-flex;
 }
 .slider {
-  // background-color: antiquewhite;
   // min-height: 60vh;
   width: 100%;
   // display: flex;
-}
-
-.sliderBox [data-type='vertical'] {
-  display: none;
 }
 
 .buttons {
   margin-top: 2rem;
 }
 
-// @media all and ($media-tablet) {
-//   .sliderBox [data-type='vertical'] {
-//     display: block;
-//   }
-// }
+@media all and ($media-laptop) {
+  .sliderBox {
+    width: 60%;
+    align-items: center;
+  }
+  .sliderBox .vertical {
+    margin-top: -20vh;
+  }
+}
+
+@media all and ($media-laptop-lg) {
+  .sliderBox {
+    // width: 60%;
+    // height: 60vh;
+    // border: 1px solid red;
+    // overflow-y: hidden;
+    // overflow-x: visible;
+  }
+  .sliderBox .vertical {
+    // height: 40vh;
+    // border: 1px solid red;
+    // margin-top: -30vh;
+    margin-top: -260px;
+    // margin-bottom: -10vh;
+  }
+  .buttons {
+    margin-top: 0px;
+  }
+}
+
+@media all and ($media-desktop) {
+  .sliderBox {
+    width: 50%;
+    max-width: 850px;
+  }
+}
+// @media all and ($media-desktop), all and (min-height: 900px) {
+@media all and ($media-desktop) and (min-height: 900px) {
+  .buttons {
+    margin-top: 50px;
+  }
+}
