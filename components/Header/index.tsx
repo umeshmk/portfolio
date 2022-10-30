@@ -9,7 +9,10 @@ export const Header = () => {
       </El.Circle>
 
       <div className="heading1">Umesh Kadam</div>
-      <div className="heading3">Frontend Developer (Typescript & React)</div>
+      <div className="heading3">
+        Frontend Developer
+        <div>(Typescript & React)</div>
+      </div>
 
       <El.Frame type="horizontal" />
     </header>

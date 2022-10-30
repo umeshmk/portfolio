@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .sliderBox {
-  background-color: antiquewhite;
+  background-color: transparent;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,13 +12,17 @@
 }
 .slider {
   // background-color: antiquewhite;
-  min-height: 60vh;
+  // min-height: 60vh;
   width: 100%;
   // display: flex;
 }
 
 .sliderBox [data-type='vertical'] {
   display: none;
+}
+
+.buttons {
+  margin-top: 2rem;
 }
 
 // @media all and ($media-tablet) {
