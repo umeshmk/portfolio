@@ -29,6 +29,12 @@
   .sliderBox .vertical {
     margin-top: -20vh;
   }
+  .sliderBox .vertical:last-child {
+    // display: none;
+    transform: rotateZ(10deg);
+    transform: scale(-1, 1) rotateZ(4deg);
+    // transform: scale(1, -1);
+  }
 }
 
 @media all and ($media-laptop-lg) {

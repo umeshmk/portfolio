@@ -23,14 +23,14 @@
   width: 10rem;
   height: 10rem;
   margin: 0.3rem;
-  color: #555;
+  color: #777;
   padding: 1rem;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
   border-radius: 5em;
   cursor: pointer;
-  box-shadow: inset 0 0 0px 10px var(--colorPrimary);
+  box-shadow: inset 0 0 0px 10px var(--colorPrimaryLighter);
   transition: all 0.5s;
 
   &:active {
@@ -45,6 +45,7 @@
     box-shadow: inset 0 0 0px 3px #fff;
     transition: all 0.5s;
     color: var(--colorPrimary);
+    color: #333;
   }
 }
 

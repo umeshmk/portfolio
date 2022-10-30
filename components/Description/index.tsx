@@ -34,12 +34,12 @@ export const Description = () => {
         My Techstack <br />
         &nbsp;&nbsp;&nbsp;➔ Main :{' '}
         <span>
-          Typescript, React, Redux, Styled-Components, Material-UI, TailwindCss
+          Typescript, Next.js, React, Styled-Components, Material-UI, Redux, etc
         </span>
         <br />
         &nbsp;&nbsp;&nbsp;➔ Others :{' '}
         <span>
-          Visual Studio Code, Html, Css/Sass, Git, Webpack, Vuepress, Ubuntu
+          Visual Studio Code, TailwindCss, Slack, Git, Jira, Figma, etc
         </span>
       </p>
       {/* Contact Me -&nbsp;   */}
