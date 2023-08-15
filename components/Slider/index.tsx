@@ -23,6 +23,7 @@ export const Slider = () => {
           <SwiperComponent
             modules={[Pagination]}
             autoHeight={true}
+            allowTouchMove={false}
             onInit={(obj) => {
               setSObj(obj);
             }}

@@ -10,23 +10,24 @@ export const Description = () => {
       My Name is Umesh Kadam and I&apos;m a Frontend Developer.
       <p />I have done 4 years Bachelor of Engineering in Information Technology
       from Mumbai University, India.
-      <p />I have been in Web Development since more than half a decade. Take a
-      look at my{' '}
+      <p />I have been in Web Development since more than half a decade with a
+      commercial work experience of almost 2 years. Take a look at my{' '}
       <Link target="_blank" href="https://github.com/umeshmk">
         Github
       </Link>
-      ,&nbsp;
+      {/* ,&nbsp; */}
+      &nbsp;and&nbsp;
       <Link
         target="_blank"
         href="https://stackoverflow.com/users/4681392/umesh-kadam">
         StackOverflow
       </Link>
-      &nbsp;and&nbsp;
-      <Link
+      {/* &nbsp;and&nbsp; */}
+      {/* <Link
         target="_blank"
         href="https://triplebyte.com/tb/umesh-kadam-wto3lpz/certificate">
         Triplebyte
-      </Link>
+      </Link> */}
       &nbsp; accounts.
       <br />
       <p />
@@ -47,13 +48,13 @@ export const Description = () => {
       <Link target="_blank" href="mailto:umeshk149@gmail.com">
         umeshk149@gmail.com
       </Link>{' '}
-      or &nbsp;
+      {/* or &nbsp; */}
       {/* <Link target='_blank'  href="https://www.reddit.com/user/umeshmk">  Reddit</Link>{' '} */}
       {/* <br/> */}
-      <Link target="_blank" href="#">
+      {/* <Link target="_blank" href="#">
         umesh_m_k
       </Link>{' '}
-      (skype)
+      (skype) */}
       <p />
       {/* </em> */}
     </div>
